@@ -1,0 +1,26 @@
+### 学習・テスト用
+
+## サイズ、学習パラメータ
+image_size: 96
+embed_size: 128
+batch_size: 16
+lr: 0.0004
+epochs: 3000　
+
+### 学習用
+
+## 出力フォルダ
+out_model_dir: results/model/ # モデル保存先
+out_image_z_dir: results/image/image_from_z/ #乱数から生成した画像の保存先
+out_image_reconst: results/image/RECONSTRUCT/ # 再構成した画像の保存先
+
+### テスト用
+
+##testフォルダに入った画像からテストに用いるファイルの数
+test_image_number: 10
+## 保存されたmodelファイルの読み込みに使用
+# modelは10エポック毎に保存されますが、モデルファイル(.pkl)名にはエポック番号が付くのでその番号をここで指定します。
+# 1000エポック目のファイルを読み込む場合, 1000に指定します。
+load_epoch: 3000
+##出力フォルダ
+out_test_dir: test_result
